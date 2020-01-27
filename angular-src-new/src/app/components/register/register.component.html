@@ -1,0 +1,32 @@
+<div class="container innerContainer">
+  <h2 class="page-header text-dark reg-header">Register</h2>
+  <form (submit)="onRegisterSubmit()">
+    <div class="form-group text-dark">
+      <label>FIRST NAME</label>
+      <input type="text" [(ngModel)]="firstname" name="firstname" class="form-control">
+    </div>
+    <div class="form-group text-dark">
+      <label>LAST NAME</label>
+      <input type="text" [(ngModel)]="lastname" name="lastname" class="form-control">
+    </div>
+    <div class="form-group text-dark">
+      <label class="">EMAIL</label>
+      <input type="text" [(ngModel)]="email" name="email" class="form-control">
+    </div>
+    <div class="form-group text-dark">
+      <label class="">PHONE#</label>
+      <input type="text" [(ngModel)]="phone" name="phone" class="form-control">
+    </div>
+    <div class="form-group text-dark">
+      <label>USERNAME</label>
+      <input type="text" [(ngModel)]="username" name="username" class="form-control">
+    </div>
+    <div class="form-group text-dark">
+      <label>PASSWORD</label>
+      <input type="password" [(ngModel)]="password" name="password" class="form-control">
+    </div>
+    <div id="btn-div">
+      <input type="submit" class="reg-submit btn btn-lg btn-block text-dark" value="Submit">
+    </div>
+  </form>
+</div>

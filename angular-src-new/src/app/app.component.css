@@ -1,0 +1,10 @@
+.mycontent {
+  margin-top: 100px;
+  border-radius: 10px;
+}
+.validation-error {
+  background-color: #B42304;
+  color: white;
+  padding-left: 35px;
+  padding-right: 30px;
+}
