@@ -48,8 +48,6 @@ export class AuthService {
     this.authToken = null;
     this.user = null;
     window.localStorage.clear();
-    //localStorage.setItem('id_token', null);
-    //localStorage.setItem('user', null);
     console.log(localStorage.getItem('id_token'));
     console.log("hello from authService.logout");
   }

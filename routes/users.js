@@ -21,7 +21,7 @@ router.post('/check', (req, res, next) => {
 
 //Register
 router.post('/register', (req, res, next) => {
-    const userRole = "USER";
+    const userRole = "_USER_";
     
     let newUser = new User(
         {
@@ -95,4 +95,25 @@ router.get('/validate', (req, res, next) => {
     res.send('validate');
 });
 
+//Authorize
+
+
+
+router.post('/authorize', (req, res, next) => {
+    const username = req.body.username;
+    
+    User.getUserByUsername(username, (err, user) => {
+        if (err) throw err;
+        if(!user){
+            return res.json({success: false, msg:'User not found.'});
+        }else{ 
+            res.send('validate');
+        }
+    });
+});
+
 module.exports = router;
+// ^^^  If you see server Error  --unexpected end of input-- at the line above, make sure that all brackets /parentheses in any recent code are closed. 
+    
+        
+        
