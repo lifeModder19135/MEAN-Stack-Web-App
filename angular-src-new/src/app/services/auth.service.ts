@@ -29,6 +29,12 @@ export class AuthService {
     return this.http.get('http://localhost:3000/users/profile', {headers: headers}).map(res => res.json());
   }
 
+  getUserRole(usernameObject){
+    let headers = new Headers;
+    headers.append('ContentType', 'Application/Json');
+    return this.http.get('http://localhost:3000/users/authorize', usernameObject, {headers: headers}).map(res => res.json());
+  }
+
   storeUserData(token, user){
     localStorage.setItem('id_token', token);
     localStorage.setItem('user', JSON.stringify(user));

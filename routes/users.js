@@ -102,12 +102,15 @@ router.get('/validate', (req, res, next) => {
 router.post('/authorize', (req, res, next) => {
     const username = req.body.username;
     
-    User.getUserByUsername(username, (err, user) => {
+    User.getUserRoleByUsername(username, (err, user) => {
         if (err) throw err;
         if(!user){
             return res.json({success: false, msg:'User not found.'});
         }else{ 
-            res.send('validate');
+            res.json({
+                success: true,
+                user_role: user.role
+                });
         }
     });
 });

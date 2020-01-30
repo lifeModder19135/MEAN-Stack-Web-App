@@ -66,5 +66,5 @@ module.exports.comparePassword = function(candidatePassword, hash, callback){
 
 module.exports.getUserRoleByUsername = (username, callback) => {
     const query = {username: username};
-    User.findOne(query,role,callback);
+    User.findOne(query,callback);
 };

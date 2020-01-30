@@ -27,6 +27,12 @@ export class LoginComponent implements OnInit {
       password: this.password
     };
 
+    const userObject = {
+      username: this.username
+    }
+
+    console.log(this.authService.getUserRole(userObject));
+
     this.authService.authenticateUser(user)
       .subscribe(data => {
         if (data.success){
