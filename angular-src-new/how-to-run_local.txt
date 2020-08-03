@@ -1,6 +1,6 @@
-If you are running this app from a machine for the first time, thes steps must be followed:
+If you are running this app from a Windows machine for the first time, these steps must be followed:
 
-1. Download and install node.js
+1. Download and install node.js:
     -download installer from:
             https://nodejs.org/dist/v12.18.3/node-v12.18.3-x64.msi  
     -once downloaded, run the .msi file
@@ -8,8 +8,23 @@ If you are running this app from a machine for the first time, thes steps must b
 2. Install nodemon:
     -from the node terminal, type: 
             npm install --global nodemon
-3. Download and install mongodb
+3. Download and install mongodb:
     -download installer from:
             https://www.mongodb.com/try/download/community?tck=docs_server   
     -once downloaded, run the .msi file
     -follow the directions on the installer to install          
+4. (optional on VS Code) Download and connect MongoDB extension:
+        -go to extensins tab
+        -search for "MongoDB for VS Code"
+        -click 'install'
+        -type [CTRL SHIFT P] to open command pallette
+        -type 'connect' and click the option to connect --> "MongoDB: Connect"
+        -retype [CTRL SHIFT P] to reopen command pallette
+        - type 'launch Mongodb' and click the option to launch --> "MongoDB:Launch MongoDB Shell"
+        -this should give you a fresh shell terminal
+5. To start server; simply type 'nodemon' in a node terminal.
+        -you should recieve a log msg saying:
+                -app listening on port 3000
+                -connected to database at mongodb://localhost:27017/meanauth
+        -this means that the app has started successfully
+6. To see the current immplementation of the angular front end in the browser at 'localhost:3000'
