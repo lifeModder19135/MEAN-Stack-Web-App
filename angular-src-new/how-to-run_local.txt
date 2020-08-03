@@ -1,0 +1,15 @@
+If you are running this app from a machine for the first time, thes steps must be followed:
+
+1. Download and install node.js
+    -download installer from:
+            https://nodejs.org/dist/v12.18.3/node-v12.18.3-x64.msi  
+    -once downloaded, run the .msi file
+    -follow the directions on the installer to install          
+2. Install nodemon:
+    -from the node terminal, type: 
+            npm install --global nodemon
+3. Download and install mongodb
+    -download installer from:
+            https://www.mongodb.com/try/download/community?tck=docs_server   
+    -once downloaded, run the .msi file
+    -follow the directions on the installer to install          
