@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@angular/cli": "^13.2.2",
+    "angular": "^1.8.2",
     "bcryptjs": "*",
     "body-parser": "*",
     "cors": "*",
