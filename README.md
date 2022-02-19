@@ -35,5 +35,7 @@ Now, you just need to delete the file called package-lock.json.
 This is another file that will be regenerated in an updated version by NPM.
 
 The project is now ready to be worked with! Running run
-               $  npm install 
+         
+         $  npm install 
+         
 Then kick back and watch the generation magic happen!!!
